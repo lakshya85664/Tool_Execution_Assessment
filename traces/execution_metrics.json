@@ -1,0 +1,57 @@
+{
+  "records": [
+    {
+      "run_id": "run-metric-001",
+      "tool": "echo",
+      "status": "success",
+      "attempts": 1,
+      "retries": 0,
+      "elapsed_s": 0.01
+    },
+    {
+      "run_id": "run-metric-002",
+      "tool": "slow",
+      "status": "timeout",
+      "attempts": 1,
+      "retries": 0,
+      "elapsed_s": 0.05
+    },
+    {
+      "run_id": "run-metric-003",
+      "tool": "flaky",
+      "status": "success",
+      "attempts": 2,
+      "retries": 1,
+      "elapsed_s": 0.025
+    },
+    {
+      "run_id": "run-metric-004",
+      "tool": "unknown",
+      "status": "rejected",
+      "attempts": 0,
+      "retries": 0,
+      "elapsed_s": 0.0
+    },
+    {
+      "run_id": "run-metric-005",
+      "tool": "permanent",
+      "status": "error",
+      "attempts": 1,
+      "retries": 0,
+      "elapsed_s": 0.015
+    }
+  ],
+  "summary": {
+    "total_calls": 5,
+    "successes": 2,
+    "errors": 1,
+    "rejected": 1,
+    "timeouts": 1,
+    "blocked": 0,
+    "total_retries": 1,
+    "average_latency_s": 0.02,
+    "max_latency_s": 0.05,
+    "success_rate": 0.4,
+    "error_rate": 0.2
+  }
+}
